@@ -4,6 +4,6 @@ import (
 	"fmt"
 )
 
-func gpersist(){
+func Gpersist(){
 	fmt.Println("Tests")
 }

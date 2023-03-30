@@ -49,6 +49,6 @@ func StartupPersist(name string, execPath string) error{
 }
 
 func SchTaskPersist(name string, path string) error{
-	_, err := cmdOut(fmt.Sprintf("schtasks /create /sc ONCE /st 00:00 /tn %q /tr %s", name, path))
+	_, err := cmdOut(fmt.Sprintf("schtasks /create /st 00:00 /tn %q /tr %s", name, path))
 	return err
 }
